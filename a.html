@@ -1,0 +1,43 @@
+<html>
+    <title>My first cool program</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <body>
+        <script>
+            function qq() {
+                $('.output').html('OK');
+            };
+        </script>
+        <table>
+            <tbody>
+            <tr><td>
+            <form>
+                Who will You be, when become adult!<br/>
+                <div>
+                    <input type="radio" name="profession" id="profession" />
+                     <label>Медик</label><br/>
+                    <input type="radio" name="profession" id="profession" />
+                     <label>Медик</label><br/>
+                    <input type="radio" name="profession" id="profession" />
+                     <label>Медик</label><br/>
+                    <input type="radio" name="profession" id="profession" />
+                     <label>Медик</label><br/>
+                </div>
+                <input type="submit" value="OK" id='submitbtn'>
+            </form>
+            </td>
+            <td>
+                Здесь будет результат. <br/>
+                <div class='output'>
+                </div>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+    <script>
+        $("#submitbtn").on("click", qq);
+    </script>
+</html>
